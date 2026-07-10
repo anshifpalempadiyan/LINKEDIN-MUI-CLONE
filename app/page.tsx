@@ -5,7 +5,7 @@ import LeftSidebar from './components/LeftSidebar'
 import Feed from './components/Feed'
 import RightSidebar from './components/RightSidebar'
 
-export default function Home() {
+export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <Box sx={{ bgcolor: 'grey.100', minHeight: '100vh' }}>
       

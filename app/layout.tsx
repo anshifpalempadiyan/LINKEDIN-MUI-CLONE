@@ -6,10 +6,10 @@ export const metadata = {
   description: "MUI Assessment",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, }: { children: React.ReactNode; }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <Providers>
           {children}
         </Providers>
