@@ -1,3 +1,15 @@
 "use client"
 
-import { themeProvider , createTheme } from '@mui/material/styles'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline';
+
+const defaultTheme = createTheme();
+
+export default function Providers({ children }) {
+    return (
+        <ThemeProvider theme={defaultTheme}>
+            <CssBaseline />
+            {children}
+        </ThemeProvider>
+    );
+}
