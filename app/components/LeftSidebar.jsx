@@ -64,7 +64,8 @@ export default function LeftSidebar() {
                             <ListItemIcon sx={{ minWidth: 36 }}>
                                 <BookmarkIcon fontSize="small" sx={{ color: 'text.secondary' }} />
                             </ListItemIcon>
-                            <ListItemText primary="Saved items" primaryTypographyProps={{ variant: 'caption', fontWeight: 'bold' }} />
+                            {/* <ListItemText primary="Saved items" primaryTypographyProps={{ variant: 'caption', fontWeight: 'bold' }} /> */}
+                            <ListItemText primary={<Typography variant="caption" fontWeight="bold">Saved items</Typography>} />
                         </ListItemButton>
                     </ListItem>
 
@@ -73,7 +74,8 @@ export default function LeftSidebar() {
                             <ListItemIcon sx={{ minWidth: 36 }}>
                                 <GroupIcon fontSize="small" sx={{ color: 'text.secondary' }} />
                             </ListItemIcon>
-                            <ListItemText primary="Groups" primaryTypographyProps={{ variant: 'caption', fontWeight: 'bold' }} />
+                            {/* <ListItemText primary="Groups" primaryTypographyProps={{ variant: 'caption', fontWeight: 'bold' }} /> */}
+                            <ListItemText primary={<Typography variant="caption" fontWeight="bold">Groups</Typography>} />
                         </ListItemButton>
                     </ListItem>
 
@@ -82,7 +84,8 @@ export default function LeftSidebar() {
                             <ListItemIcon sx={{ minWidth: 36 }}>
                                 <EventIcon fontSize="small" sx={{ color: 'text.secondary' }} />
                             </ListItemIcon>
-                            <ListItemText primary="Events" primaryTypographyProps={{ variant: 'caption', fontWeight: 'bold' }} />
+                            {/* <ListItemText primary="Events" primaryTypographyProps={{ variant: 'caption', fontWeight: 'bold' }} /> */}
+                            <ListItemText primary={<Typography variant="caption" fontWeight="bold">Events</Typography>} />
                         </ListItemButton>
                     </ListItem>
 
