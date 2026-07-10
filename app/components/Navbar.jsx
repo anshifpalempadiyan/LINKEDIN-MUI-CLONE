@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, TextField, Box, Stack, IconButton } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, Stack, InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
@@ -21,12 +21,13 @@ export default function Navbar() {
 
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', bgcolor: 'grey.100', px: 1, borderRadius: 1 }}>
                     <SearchIcon sx={{ color: 'text.secondary', mr: 1 }} />
-                    <TextField
+                    {/* <TextField
                         placeholder="Search"
                         variant="standard"
                         InputProps={{ disableUnderline: true }}
                         sx={{ width: '200px' }}
-                    />
+                    /> */}
+                    <InputBase placeholder="Search" sx={{ width: '200px' }} />
                 </Box>
 
                 <Box sx={{ flexGrow: 1 }} />

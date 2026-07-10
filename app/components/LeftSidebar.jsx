@@ -41,11 +41,15 @@ export default function LeftSidebar() {
                 <List dense disablePadding>
                     <ListItem disablePadding>
                         <ListItemButton>
-                            <ListItemText
+                            {/* <ListItemText
                                 primary="Connections"
                                 secondary="Grow your network"
                                 primaryTypographyProps={{ variant: 'caption', color: 'text.secondary' }}
                                 secondaryTypographyProps={{ variant: 'subtitle2', color: 'text.primary', fontWeight: 'bold' }}
+                            /> */}
+                            <ListItemText
+                                primary={<Typography variant="caption" color="text.secondary">Connections</Typography>}
+                                secondary={<Typography variant="subtitle2" color="text.primary" fontWeight="bold">Grow your network</Typography>}
                             />
                         </ListItemButton>
                     </ListItem>

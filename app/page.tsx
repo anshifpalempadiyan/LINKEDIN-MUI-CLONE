@@ -3,6 +3,7 @@ import { Box, Container, Grid, Card, CardContent, Typography } from "@mui/materi
 import Navbar from './components/Navbar'
 import LeftSidebar from './components/LeftSidebar'
 import Feed from './components/Feed'
+import RightSidebar from './components/RightSidebar'
 
 export default function Home() {
   return (
@@ -11,24 +12,17 @@ export default function Home() {
       <Navbar />
 
       <Container maxWidth="lg" sx={{ pt: 3, pb: 4 }}>
-        <Grid container spacing={3} sx={{ flexWrap: { xs: 'wrap', md: 'nowrap' } }}>
-          <Grid item xs={12} md={3} sx={{ minWidth: { md: '250px' } }}>
+        <Grid container spacing={3} >
+          <Grid size={{ xs: 12, md: 4, lg: 3 }} >
             <LeftSidebar />
           </Grid>
 
-          <Grid item xs={12} md={6} sx={{ flexGrow: 1, minWidth: { md: '500px' } }}>
+          <Grid size={{ xs: 12, md: 8, lg: 6 }}>
             <Feed />
           </Grid>
 
-          <Grid item xs={12} md={3} sx={{ minWidth: { md: '250px' }, display: { xs: 'none', md: 'block' } }}>
-            <Card>
-              <CardContent>
-                <Typography variant="h6">Right Column</Typography>
-                <Typography variant="body2" color="text.secondary">
-                  LinkedIn News
-                </Typography>
-              </CardContent>
-            </Card>
+          <Grid size={{ xs: 12, lg: 3 }} sx={{ display: { xs: 'none', lg: 'block' } }}>
+            <RightSidebar />
           </Grid>
         </Grid>
       </Container>

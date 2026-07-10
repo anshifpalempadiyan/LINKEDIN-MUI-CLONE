@@ -26,13 +26,13 @@ export default function Feed() {
                     </Box>
 
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
-                        <Button startIcon={<ImageIcon sx={{ color: '#1976d2' }} />} color="inherit">
+                        <Button startIcon={<ImageIcon color="primary" />} color="inherit">
                             Media
                         </Button>
-                        <Button startIcon={<OndemandVideoIcon sx={{ color: '#2e7d32' }} />} color="inherit">
+                        <Button startIcon={<OndemandVideoIcon color="success" />} color="inherit">
                             Video
                         </Button>
-                        <Button startIcon={<ArticleIcon sx={{ color: '#ed6c02' }} />} color="inherit">
+                        <Button startIcon={<ArticleIcon color="warning" />} color="inherit">
                             Write article
                         </Button>
                     </Box>
@@ -43,11 +43,16 @@ export default function Feed() {
 
             <Card>
 
-                <CardHeader
+                {/* <CardHeader
                     avatar={<Avatar sx={{ bgcolor: 'primary.main' }}>A</Avatar>}
                     title="Anshif Palempadiyan"
                     subheader="Full Stack Developer | 2h"
                     titleTypographyProps={{ fontWeight: 'bold' }}
+                /> */}
+                <CardHeader
+                    avatar={<Avatar sx={{ bgcolor: 'primary.main' }}>A</Avatar>}
+                    title={<Typography fontWeight="bold">Anshif Palempadiyan</Typography>}
+                    subheader="Full Stack Developer | 2h"
                 />
 
                 <CardContent sx={{ pt: 0 }}>
@@ -68,11 +73,16 @@ export default function Feed() {
 
             <Card>
 
-                <CardHeader
+                {/* <CardHeader
                     avatar={<Avatar sx={{ bgcolor: 'secondary.main' }}>N</Avatar>}
                     title="Nihal Avulan"
                     subheader="Full Stack Developer | 5h"
                     titleTypographyProps={{ fontWeight: 'bold' }}
+                /> */}
+                <CardHeader
+                    avatar={<Avatar sx={{ bgcolor: 'secondary.main' }}>N</Avatar>}
+                    title={<Typography fontWeight="bold">Nihal Avulan</Typography>}
+                    subheader="Full Stack Developer | 5h"
                 />
                 <CardContent sx={{ pt: 0 }}>
                     <Typography variant="body2" color="text.primary">
